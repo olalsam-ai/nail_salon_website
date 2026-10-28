@@ -12,16 +12,16 @@ def home():
 def services():
     # Your real nail menu passed directly to the webpage
     nail_services = [
-        {"name": "Gel Application", "price": "KSh 300", "desc": "Long-lasting, high-shine gel polish cured under LED light."},
-        {"name": "Classic  Stick on plus French Tips", "price": "KSh 600", "desc": "Timeless, elegant white or colored tips on natural nails."},
-        {"name": "DeluxeManicure", "price": "KSh 700", "desc": "Nail shaping, cuticle care, exfoliating scrub, and a relaxing hand massage."},
-        {"name": "Deluxe Pedicure", "price": "KSh 700", "desc": "Foot soak, scrub, callus removal, massage, and professional toe polishing."},
-        {"name": "Custom Nail Art", "price": "From KSh 50/nail", "desc": "Hand-painted designs, gems, chrome, or abstract line art tailored to you."},
-        {"name": "Gumgel", "price": "KSh 1200", "desc": "A durable, flexible gel for nail extensions"},
-        {"name": "Buider gel", "price": "KSh 800", "desc": "A strong gel for sculpting and extending nails"},
-        {"name": "Overlay", "price": "KSh 1200", "desc": "A protective layer of gel or acrylic over natural nails for added strength and shine"},
-        {"name": "lashes", "price": "KSh 500", "desc": "enhane your eyes with our proffesional lash extensions"}
-        
+        {"name": "Gel Application", "price": "KSh 300", "image": "gel_application.jpg", "desc": "Long-lasting, high-shine gel polish cured under LED light."},
+        {"name": "Classic  Stick on plus French Tips", "price": "KSh 600", "image":"nail2_art.jp.jpeg" "classic_stick_on_french_tips.jpg", "desc": "Timeless, elegant white or colored tips on natural nails."},
+        {"name": "DeluxeManicure", "price": "KSh 500", "image": "deluxe_manicure.jpg", "desc": "Nail shaping, cuticle care, exfoliating scrub, and a relaxing hand massage."},
+        {"name": "Deluxe Pedicure", "price": "KSh 700", "image": "deluxe_pedicure.jpg", "desc": "Foot soak, scrub, callus removal, massage, and professional toe polishing."},
+        {"name": "Custom Nail Art", "price": "From KSh 50/nail", "image": "custom_nail3_art.jp.jpeg", "desc": "Hand-painted designs, gems, chrome, or abstract line art tailored to you."},
+        {"name": "Gumgel", "price": "KSh 1200", "image": "gumgel.jp.jpeg", "desc": "A durable, flexible gel for nail extensions"},
+        {"name": "Buider gel", "price": "KSh 800", "image": "frenchtip2.jp.jpeg", "desc": "A strong gel for sculpting and extending nails"},
+        {"name": "Overlay", "price": "KSh 1200", "image": "overlay.jp.jpeg", "desc": "A protective layer of gel or acrylic over natural nails for added strength and shine"},
+        {"name": "lashes", "price": "KSh 500", "image": "lashes.jp.jpeg", "desc": "enhance your eyes with our professional lash extensions"}
+
         
     ]
     return render_template('home.html', services=nail_services)
