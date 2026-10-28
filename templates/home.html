@@ -1,13 +1,49 @@
-<!-- Section 4: Location & Hours Details -->
-<div id="contact" class="services-container" style="background: white; border-radius: 16px; padding: 30px; margin-top: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
-    <h2 style="text-align: center; color: #2b2d42;">Visit Us / Contact</h2>
-    <p style="text-align: center; color: #666; margin-bottom: 25px;">Find our salon or reach out directly to book an appointment.</p>
+{% extends 'base.html' %}
+{% block content %}
+<!-- Section 1: Welcome Header -->
+<div class="hero">
+    <h1>Flawless Gel, Luxury Pedicures & Custom Nail Art</h1>
+    <p>Professional nail care tailored to make you shine. Book your session today!</p>
     
-    <div style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; font-size: 16px;">
-        <p>📍 <strong>Our Location:</strong> Siaya County, Kenya</p>
-        <p>⏰ <strong>Working Hours:</strong> Monday – Saturday: 8:00 AM – 6:00 PM</p>
-        <p>📞 <strong>Phone Line:</strong> +254 701 761 397</p>
+    <div class="cta-buttons">
+        <a href="https://wa.me." class="btn whatsapp-btn" target="_blank">💬 WhatsApp: +254 701 761 397</a>
+        <a href="#menu" class="btn secondary-btn">View Menu</a>
     </div>
 </div>
+
+<!-- Section 2: Lookbook Gallery -->
+<div class="gallery-preview">
+    <h2>My Latest Work</h2>
+    <p>Check out recent designs ranging from clean french tips to complex custom nail art.</p>
+    <div class="grid">
+        <div class="card"><img src="{{ url_for('static', filename='images/gel_application.jp.jpeg') }}" alt="Gel Nails by Nickie"><p>Fresh Gel Application</p></div>
+        <div class="card"><img src="{{ url_for('static', filename='images/frenchtip.jp.jpeg') }}" alt="French Tips by Nickie"><p>Classic French Tips</p></div>
+        <div class="card"><img src="{{ url_for('static', filename='images/nails_arts.jp.jpeg') }}" alt="Nail Art by Nickie"><p>Hand-painted Custom Art</p></div>
+    </div>
+</div>
+
+<!-- Section 3: Combined Services Menu -->
+<div id="menu" class="services-container" style="scroll-margin-top: 80px;">
+    <h2 style="text-align: center; font-size: 32px; color: #3d3a3a; margin-top: 40px;">Our Luxury Menu</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">Treat your hands and feet to premium care and detailed extensions.</p>
+    
+    <div class="services-list">
+        {% for service in services %}
+        <div class="service-item">
+            <div class="service-header">
+                <h3>{{ service.name }}</h3>
+                <span class="price">{{ service.price }}</span>
+            </div>
+            <p>{{ service.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; padding-bottom: 40px;">
+        <p style="font-weight: bold; margin-bottom: 10px;">Call or Text us directly:</p>
+        <a href="https://wa.me." class="btn whatsapp-btn" target="_blank">Book via WhatsApp (+254 701 761 397)</a>
+    </div>
+</div>
+{% endblock %}
 
 
