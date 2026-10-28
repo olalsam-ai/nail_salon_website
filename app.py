@@ -22,7 +22,7 @@ def services():
         {"name": "Overlay", "price": "KSh 1200", "desc": "A protective layer of gel or acrylic over natural nails for added strength and shine"}
         
     ]
-    return render_template('services.html', services=nail_services)
+    return render_template('home.html', services=nail_services)
 
 if __name__ == '__main__':
     app.run(debug=True)
