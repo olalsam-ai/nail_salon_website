@@ -1,22 +1,20 @@
-{% extends 'base.html' %}
-{% block content %}
-<div class="hero">
-    <h1>Flawless Gel, Luxury Pedicures & Custom Nail Art</h1>
-    <p>Professional nail care tailored to make you shine. Book your session today!</p>
+<div class="grid">
+    <!-- Card 1: Gel Application -->
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/gel_application.jp.jpeg') }}" alt="Gel Nails by Nickie">
+        <p>Fresh Gel Application</p>
+    </div>
     
-    <div class="cta-buttons">
-        <!-- We explicitly added your number to the button text here -->
-        <a href="https://wa.me." class="btn whatsapp-btn" target="_blank">💬 WhatsApp: +254 701 761 397</a>
-        <a href="/services" class="btn secondary-btn">View Menu</a>
+    <!-- Card 2: Classic French Tips -->
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/frenchtip.jp.jpeg') }}" alt="French Tips by Nickie">
+        <p>Classic French Tips</p>
+    </div>
+    
+    <!-- Card 3: Custom Nail Art -->
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/nails_arts.jp.jpeg') }}" alt="Nail Art by Nickie">
+        <p>Hand-painted Custom Art</p>
     </div>
 </div>
-
-<div class="gallery-preview">
-    <h2>My Latest Work</h2>
-    <p>Check out recent designs ranging from clean french tips to complex custom nail art.</p>
-    <div class="grid">
-        <div class="card"><img src="{{ url_for('static', filename='images/nail_art.jpg') }}" alt="Nail Art Layout"><p>Hand-painted Custom Art by Nickie</p></div>
-    </div>
-</div>
-{% endblock %}
 
