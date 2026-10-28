@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="services-container">
+    <h1>Our Luxury Menu</h1>
+    <p>Treat your hands and feet to premium care and detailed extensions.</p>
+    
+    <div class="services-list">
+        {% for service in services %}
+        <div class="service-item">
+            <div class="service-header">
+                <h3>{{ service.name }}</h3>
+                <span class="price">{{ service.price }}</span>
+            </div>
+            <p>{{ service.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+        <!-- Displaying phone text clearly at the bottom of your pricing card layout -->
+        <p style="font-weight: bold; margin-bottom: 10px;">Call or Text us directly:</p>
+        <a href="https://wa.me." class="btn whatsapp-btn" target="_blank">Book via WhatsApp (+254 701 761 397)</a>
+    </div>
+</div>
+{% endblock %}

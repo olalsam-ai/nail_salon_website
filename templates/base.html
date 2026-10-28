@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickie Nails | Professional Nail Technician</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar updated with your new brand name -->
+    <nav>
+        <div class="logo">✨ Nickie Nails</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Services & Pricing</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nickie Nails. All Rights Reserved. Beautiful nails, confident you!</p>
+    </footer>
+</body>
+</html>
+
