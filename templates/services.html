@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="menu" class="services-container" style="scroll-margin-top: 80px;">
+    <h1 style="text-align: center; font-size: 32px; color: #3d3a3a; margin-top: 40px;">Services & Pricing</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">Treat your hands and feet to premium care and detailed extensions.</p>
+
+    <div class="services-list">
+        {% for service in services %}
+        <div class="service-item">
+            <div class="service-header">
+                <h3>{{ service.name }}</h3>
+                <span class="price">{{ service.price }}</span>
+            </div>
+            <p>{{ service.desc }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="cta-buttons" style="text-align: center; margin: 30px 0;">
+        <a href="https://wa.me/254701761397?text=Hi, I would like to book a nail appointment" class="btn">Book via WhatsApp</a>
+    </div>
+</div>
+{% endblock %}
