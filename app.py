@@ -19,7 +19,7 @@ def services():
         {"name": "Custom Nail Art", "price": "From KSh 50/nail", "image": "custom_nail3_art.jp.jpeg", "desc": "Hand-painted designs, gems, chrome, or abstract line art tailored to you."},
         {"name": "Gumgel", "price": "KSh 1200", "image": "gumgel.jp.jpeg", "desc": "A durable, flexible gel for nail extensions"},
         {"name": "Buider gel", "price": "KSh 800", "image": "frenchtip2.jp.jpeg", "desc": "A strong gel for sculpting and extending nails"},
-        {"name": "Overlay", "price": "KSh 1200", "image": "overlay.jp.jpeg", "desc": "A protective layer of gel or acrylic over natural nails for added strength and shine"},
+        {"name": "Overlay", "price": "KSh 1100", "image": "overlay.jp.jpeg", "desc": "A protective layer of gel or acrylic over natural nails for added strength and shine"},
         {"name": "lashes", "price": "KSh 500", "image": "lashes.jp.jpeg", "desc": "enhance your eyes with our professional lash extensions"}
 
         
