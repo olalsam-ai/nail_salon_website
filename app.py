@@ -24,7 +24,8 @@ def services():
 
         
     ]
-    return render_template('home.html', services=nail_services)
+   return render_template('services.html', services=nail_services)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
