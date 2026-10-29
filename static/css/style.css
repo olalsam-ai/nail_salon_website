@@ -2,10 +2,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    /* This creates a soft, appealing multi-shade pastel blue mixed gradient */
-    background: linear-gradient(135deg, #e0f2fe 0%, #e0e7ff 50%, #f0fdf4 100%);
-    background-attachment: fixed;
-    color: #2b2d42;
+    background: linear-gradient(to bottom, #fbf7f4, #f5f0f6, #f3f7f2);
+    color: #333;
 }
 
 
