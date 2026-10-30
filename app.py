@@ -26,5 +26,20 @@ def services():
     ]
     return render_template('services.html', services=nail_services)
 
+from flask import Response
+
+@app.route("/sitemap.xml")
+def sitemap():
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://nails-nickie.onrender.com/</loc></url>
+  <url><loc>https://nails-nickie.onrender.com/services</loc></url>
+</urlset>"""
+    return Response(xml, mimetype="application/xml")
+
+@app.route("/robots.txt")
+def robots():
+    text = "User-agent: *\nAllow: /\n\nSitemap: https://nails-nickie.onrender.com/sitemap.xml"
+    return Response(text, mimetype="text/plain")
 if __name__ == '__main__':
     app.run(debug=True)
